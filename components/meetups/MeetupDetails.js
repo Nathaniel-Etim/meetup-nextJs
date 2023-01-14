@@ -5,13 +5,12 @@ const MeetupDetail = (props) => {
     <>
       <Head>
         <title>{props.title}</title>
-        <meta name="description" content={props.description} />
+        <meta name="description" content={props.title} />
       </Head>
       <section className={classes.detail}>
         <img src={props.image} alt={props.title} />
         <h1>{props.title}</h1>
         <address> {props.address}</address>
-        <p> {props.description}</p>
       </section>
     </>
   );
